@@ -1,6 +1,7 @@
 println "happy"
 
-def proc = "git diff --name-only main release/rc".execute();
+//def proc = "git diff --name-only main release/rc".execute();
+def proc = "git diff -- '*.properties main release/rc".execute();
 def outputStream = new StringBuffer();
 proc.waitForProcessOutput(outputStream, System.err);
 println(outputStream.toString());
@@ -13,3 +14,4 @@ println(outputStream.toString());
 
 //git diff --word-diff-regex="[IMPACTFUL=Y]"
 
+ 
