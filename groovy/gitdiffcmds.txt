@@ -1,0 +1,11 @@
+git diff --name-only main release/rc
+
+git diff --name-status release/rc main
+
+git diff --name-only --diff-filter=AM <from_commit_hash> <to_commit_hash> -https://stackoverflow.com/questions/5096268/how-to-get-a-list-of-all-files-that-changed-between-two-git-commits
+
+https://stackoverflow.com/questions/2701547/how-to-make-system-command-calls-in-java-groovy
+
+groovyc gircm.groovy
+
+groovy gircm
